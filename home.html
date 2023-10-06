@@ -15,17 +15,61 @@
 
         /* Example styles for hero section */
         #hero {
-            background-image: url('img/');
+            background-image: url('img/home1.jpeg');
             background-size: contain;
             color: #000000;
-            padding: 100px 0;
+            padding: 50px 0;
+        }
+
+        #about{
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        #impact {
+        background-color: #f8f8f8;
+        padding: 50px 0;
+        }
+        
+        #impact h2 {
+            color: #333;
+        }
+        
+        #impact ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #555;
+        }
+
+        #resources {
+            background-color: #f5f5f5;
+            padding: 50px 0;
+        }
+
+        #resources h2 {
+            color: #333;
+        }
+
+        #resources p {
+            color: #555;
+        }
+
+        #resources ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        #resources ul a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        #resources ul a:hover {
+            text-decoration: underline;
         }
 
         /* Example styles for buttons */
-        .btn-primary {
-            background-color: #007bff;
-            color: #fff;
-        }
+        
     </style>
 </head>
 <body>
@@ -59,10 +103,10 @@
                 <div class="col-lg-6">
                     <h1>Stop Cyberbullying</h1>
                     <p>Together, we can create a safer online environment and raise awareness against outing and trickery.</p>
-                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#about" class="btn btn-success">Learn More</a>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img1.jpg" alt="Cyberbullying Awareness">
+                <div class="col-lg-2">
+                    <img style ="width: 150%;" src="img/home3.jpg" alt="Cyberbullying Awareness">
                 </div>
             </div>
         </div>
@@ -76,13 +120,70 @@
                     <p>Cyberbullying involves using digital communication tools to harass, threaten, or intimidate others. Outing and trickery are harmful tactics used in cyberbullying that can have devastating consequences.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="about-image.jpg" alt="About Cyberbullying">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/background_home.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/home2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- More sections for Impact and Resources can be added here -->
+    <section id="impact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Impact of Outing and Trickery</h2>
+                    <p>Outing and trickery in cyberbullying can have severe emotional and psychological effects on the victims. Here are some of the impacts:</p>
+                    <ul>
+                        <li><strong>Emotional Distress:</strong> Victims may experience anxiety, depression, and a sense of helplessness.</li>
+                        <li><strong>Isolation:</strong> They may withdraw from social activities and feel isolated from their peers.</li>
+                        <li><strong>Damaged Reputation:</strong> Outing can harm a victim's reputation, leading to social and academic consequences.</li>
+                        <li><strong>Trust Issues:</strong> Victims may develop trust issues, making it difficult to form relationships.</li>
+                        <li><strong>Suicidal Thoughts:</strong> In extreme cases, cyberbullying can lead to suicidal thoughts or actions.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="impact-image.jpg" alt="Impact of Cyberbullying">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="container">
+            <h2>Resources</h2>
+            <p>Below are some helpful resources for dealing with cyberbullying, outing, and trickery:</p>
+            <ul>
+                <li><a href="https://www.stopbullying.gov/" target="_blank">StopBullying.gov</a> - Official U.S. government website with information and resources on bullying and cyberbullying prevention.</li>
+                <li><a href="https://www.cybersmile.org/" target="_blank">Cybersmile Foundation</a> - A non-profit organization dedicated to tackling all forms of digital abuse and cyberbullying.</li>
+                <li><a href="https://www.childnet.com/" target="_blank">Childnet International</a> - Provides resources for young people, parents, and educators to promote safe and responsible internet use.</li>
+                <li><a href="https://www.commonsense.org/" target="_blank">Common Sense Media</a> - Offers guidance for parents and teachers on media and technology use, including cyberbullying prevention.</li>
+                <li><a href="https://www.netsmartz.org/" target="_blank">NetSmartz</a> - An educational program from the National Center for Missing and Exploited Children offering resources on online safety.</li>
+            </ul>
+        </div>
+    </section>
 
     <footer>
         <div class="container text-center">
